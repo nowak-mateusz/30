@@ -8,31 +8,37 @@
         <link rel="icon" type="image/x-icon" href="img/cake.svg" />
         <title>Zaproszenie</title>
 	
-        <script type="text/javascript" defer src="js/script.js"></script>
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script type="text/javascript" defer src="js/script.js"></script>
 
     </head>
     <body>
         <audio id="player" autoplay loop><source src="audio/HappyBirthday.mp3" type="audio/mp3"></audio>
-        <nav class="navbar  navbar-expand-lg navbar-light bg-light">
-        
-        
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-<div class="navbar-nav">
-            <a class="nav-item nav-link" href="#"><img src="img/check.svg" width="20" height="20" class="d-inline-block align-center" alt=""> Potwierdzenie</a>
-            <a class="nav-item nav-link" href="#"><img src="img/placeholder.svg" width="20" height="20" class="d-inline-block align-center" alt="">Miejsce</a>
-            <a class="nav-item nav-link" href="#"><img src="img/call.svg" width="20" height="20" class="d-inline-block align-center" alt="">Kontakt</a>
             
-
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="collapse navbar-collapse order-last order-sm-first" id="navbarSupportedContent">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#"><img src="img/check.svg" width="20" height="20" class="d-inline-block align-center" alt=""> Potwierdzenie</a>
+                    <a class="nav-item nav-link" href="#"><img src="img/placeholder.svg" width="20" height="20" class="d-inline-block align-center" alt="">Miejsce</a>
+                    <a class="nav-item nav-link" href="#"><img src="img/call.svg" width="20" height="20" class="d-inline-block align-center" alt="">Kontakt</a>
+                </div>
             </div>
-            </div>
-                        <div>
-    <button id="audio-play" class="btn btn-sm" type="button" onclick="document.getElementById('player').play()"><img src="img/play-button.svg" width="10" height="10" class="d-inline-block align-center" alt="Play"></button>
-    <button id="audio-stop" class="btn btn-sm" type="button" onclick="document.getElementById('player').load(); document.getElementById('player').pause()"><img src="img/stop-button.svg" width="10" height="10" class="d-inline-block align-center" alt="Stop"></button>
-</div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             
-        </nav>
-        <div class="container wrapper">
+            <div class="nav navbar-nav navbar-right">
+                    <div class="btn-group btn-group-sm" role="group" >
+                        <button id="audio-play" class="btn btn-sm hidden-xs" type="button" onclick="document.getElementById('player').play()"><img src="img/play-button.svg" width="10" height="10" class="d-inline-block align-center" alt="Play"></button>
+                        <button id="audio-stop" class="btn btn-sm hidden-xs" type="button" onclick="document.getElementById('player').load(); document.getElementById('player').pause()"><img src="img/stop-button.svg" width="10" height="10" class="d-inline-block align-center" alt="Stop"></button>
+                    </div>
+                </div>
+            </nav>
+            
+        <div class="container wrapper ">
             <div class="row">
             </div>
         </div>
