@@ -12,18 +12,21 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
         <script type="text/javascript" defer src="js/script.js"></script>
 
     </head>
-    <body>
+    <body >
         <audio id="player" autoplay loop><source src="audio/HappyBirthday.mp3" type="audio/mp3"></audio>
             
         <nav class="navbar navbar-expand-sm navbar-light bg-light">
             <div class="collapse navbar-collapse order-last order-sm-first" id="navbarSupportedContent">
                 <div class="navbar-nav">
                     <a class="nav-item nav-link" href="#"><img src="img/check.svg" width="20" height="20" class="d-inline-block align-center" alt=""> Potwierdzenie</a>
-                    <a class="nav-item nav-link" href="#"><img src="img/placeholder.svg" width="20" height="20" class="d-inline-block align-center" alt="">Miejsce</a>
-                    <a class="nav-item nav-link" href="#"><img src="img/call.svg" width="20" height="20" class="d-inline-block align-center" alt="">Kontakt</a>
+                    <a class="nav-item nav-link" href="#place"><img src="img/placeholder.svg" width="20" height="20" class="d-inline-block align-center" alt="">Miejsce</a>
+                    <a class="nav-item nav-link" href="#contact"><img src="img/call.svg" width="20" height="20" class="d-inline-block align-center" alt="">Kontakt</a>
                 </div>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,16 +34,133 @@
             </button>
             
             <div class="nav navbar-nav navbar-right">
-                    <div class="btn-group btn-group-sm" role="group" >
-                        <button id="audio-play" class="btn btn-sm hidden-xs" type="button" onclick="document.getElementById('player').play()"><img src="img/play-button.svg" width="10" height="10" class="d-inline-block align-center" alt="Play"></button>
-                        <button id="audio-stop" class="btn btn-sm hidden-xs" type="button" onclick="document.getElementById('player').load(); document.getElementById('player').pause()"><img src="img/stop-button.svg" width="10" height="10" class="d-inline-block align-center" alt="Stop"></button>
-                    </div>
+                <div class="btn-group btn-group-sm" role="group" >
+                    <button id="audio-play" class="btn btn-sm hidden-xs" type="button" onclick="document.getElementById('player').play()"><img src="img/play-button.svg" width="10" height="10" class="d-inline-block align-center" alt="Play"></button>
+                    <button id="audio-stop" class="btn btn-sm hidden-xs" type="button" onclick="document.getElementById('player').load(); document.getElementById('player').pause()"><img src="img/stop-button.svg" width="10" height="10" class="d-inline-block align-center" alt="Stop"></button>
                 </div>
-            </nav>
+            </div>
+        </nav>
             
-        <div class="container wrapper ">
-            <div class="row">
+        <div class="jumbotron">
+            <div class="container">
+                <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                    <h1 class="display-6">Plan 30-letni wykonany<br>Zapraszamy na zabawę!</h1>
+                </div>    
             </div>
         </div>
+            
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img class="rounded-circle mx-auto d-block" src="img/_AN_.jpg" alt="Generic placeholder image" width="140" height="140">
+                    <h2 class="text-center">Ada</h2>
+                    <p style="font-size:12px;" class="text-center">Zakręcona z niej kobieta, Na parkiecie jak rakieta,<br>
+                       Tańczy do białego rana, Po tym będzie rozpoznana. <br>
+                       Gdy z nią mówisz to uważaj, Bo czasami jej się zdarza,<br>
+                       Wypowiedzieć coś dziwnego, „Adaizmem” nam zwanego.<br>
+                       Będziesz śmiał się do rozpuku, tarzając się prawie po bruku,<br>
+                       Z tą dziewczyną jest tyle zabawy, Przy niej dostaniesz pozytywnej głupawy.<br>
+                       Strasznie jest zapracowana, Wszystkim szefuje od samego rana.<br>
+                       Lecz gdy z nią się wreszcie umówić uda, Na pewno nie będzie doskwierać wam nuda.<br>
+                       Podróże, sport a może planszówki, I jeszcze postrzelasz z nią z dubeltówki.<br>
+                       A jeśli lubisz brokuła smród, To Ada Ci zrobi warzywek w bród<br>
+                       Bo taka dobra z niej dziewczyna, I z nią nie grozi Ci rutyna</p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col">
+                    <img class="rounded-circle mx-auto d-block"  src="img/_F.jpg" alt="Generic placeholder image" width="140" height="140">
+                    <h2 class="text-center">Filip</h2>
+                    <p style="font-size:12px;" class="text-center"> Zawsze wymyśli coś smacznego od nowa, Tym nie pogardzi nawet Gesslerowa,<br>
+                    Warzywa chrupiące, Wołowina krucha On nie usłyszałby „oddaj fartucha!”<br>
+                    Przy nim nie grozi Ci smutek czy nuda,  Z nim każda zabawa zawsze się uda, <br>
+                    I to nie ważne kto jak baluje, On dobrą imprezę zorganizuje,<br>
+                    A kiedy nie wiesz co w głośnikach gram, Filip jest lepszy niż Shazam,<br>
+                    Każdą piosenkę na wylot zna, Tytuł ci poda w trymiga,<br>
+                    I na ploteczki tez się nada rozmowa z nim to nie żenada,<br>
+                    Taki to fajny z Filipa chłop..iii Może wyskoczy nawet z konopii 😉</p>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+             <div class="row">
+                <div class="col">
+                    <p class="text-center">
+                        <a class="btn btn-primary" data-toggle="collapse" href="#adaArea" role="button" aria-expanded="false" aria-controls="adaArea">
+                            Pomysł na prezent
+                        </a>
+                    </p>
+                
+                    <div class="collapse adaList" id="adaArea"></div>
+                </div><!-- /.col -->
+                <div class="col">
+                    <p class="text-center">
+                        <a class="btn btn-primary" data-toggle="collapse" href="#filipArea" role="button" aria-expanded="false" aria-controls="filipArea">
+                            Pomysł na prezent
+                        </a>
+                    </p>
+                    <div class="collapse adaList" id="filipArea"></div>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+            <div class="row">
+                <div class="col">
+                    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                        <h2 class="display-5" id="place"><img src="img/placeholder.svg" width="30" height="30" class="d-inline-block align-center" alt=""> Miejsce</h2>
+                        <p>ROD im. A. Paszkowiak<br>
+                        Tylne wejscie od strony Biedronki przy ul. Dolna Wilda 104<br>
+                        Nalezy przej pod rurami ;) </p>
+                    </div>
+                    <div id="map"></div>
+                    <script>
+                        function initMap() {
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                                zoom: 17,
+                                center: {lat: 52.384796, lng: 16.924170}
+                            });
+    
+                            var image = 'img/cake20.png';
+                            var beachMarker = new google.maps.Marker({
+                                position: {lat: 52.384796, lng: 16.924170},
+                                map: map,
+                                icon: image
+                            });
+            
+                            var walkPlanCoordinates = [
+                            {lat: 52.384796, lng: 16.924170},
+                            {lat:52.384836, lng: 16.924026},
+                            {lat:52.384631, lng: 16.923919},
+                            {lat:52.384775, lng: 16.923200},
+                            {lat:52.385056, lng: 16.923110},
+                            {lat:52.385128, lng: 16.922590}
+                            ];
+            
+                            var lineSymbol = {
+                                path: 'M 0,-1 0,1',
+                                strokeOpacity: 1,
+                                scale: 4
+                            };
+                            
+                            var walkPath = new google.maps.Polyline({
+                                path: walkPlanCoordinates,
+                                geodesic: true,
+                                strokeColor: '#FF0000',
+                                strokeOpacity: 0.0,
+                                strokeWeight: 2,
+                                icons: [{
+                                icon: lineSymbol,
+                                offset: '0',
+                                repeat: '20px'
+                                }],
+                                map: map
+                            });
+                        }
+                    </script>
+                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNQY-f_qZNKJWpGNihgYblPXFn5RVN4aA&callback=initMap"> </script>
+                </div> <!-- /.col -->
+            </div> <!-- /.row -->
+            <div class="row">
+                <div class="col">
+                    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                        <h2 class="display-5" id="contact"><img src="img/call.svg" width="30" height="30" class="d-inline-block align-center" alt=""> Kontakt</h2>
+                    </div>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
     </body>
 </html>

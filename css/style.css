@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -23,3 +23,10 @@ body {
 .blue {
   background-color: #5FC9F5;
 }
+
+#map {
+        margin-left: auto;
+    margin-right: auto;
+        height: 400px;  /* The height is 400 pixels */
+        width: 90%;  /* The width is the width of the web page */
+       }
