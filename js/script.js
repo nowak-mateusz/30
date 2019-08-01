@@ -1,4 +1,11 @@
 
+function onSubmit()
+{
+    $('input:checked').attr( "disabled",""); 
+    $('input:checked').closest( "div" ).addClass("disabled"); 
+    submitted=true;
+}
+
 function createForm() 
 {
     function addRadio(form, name, id, val, check)
@@ -40,9 +47,9 @@ function createForm()
                         "zestaw pojemników do przechowywania żywności",
                         "zestaw przyborów kuchennych ( łopatka, nabierka, trzepaczka)",
                         "zestaw ręczników"];
-    
+
     var adaList =  $('.adaList');
-    $form = $('<form action="https://docs.google.com/forms/d/e/1FAIpQLSciUzge69Yr9uecRnKCYey28SN6ApbTmGNLSMFRZGCrh5DDPg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;"></form>');
+    $form = $('<form action="https://docs.google.com/forms/d/e/1FAIpQLSciUzge69Yr9uecRnKCYey28SN6ApbTmGNLSMFRZGCrh5DDPg/formResponse" method="post" target="hidden_iframe" onsubmit="onSubmit()"></form>');
     $field = $('<fieldset class="form-group"></fieldset>')
     $listCol = $('<div class="col-sm-10"></div>');
     
@@ -75,7 +82,7 @@ function createForm()
    
         adaList.append('<script type="text/javascript">var submitted=false;</script> \
                     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" \
-                    onload="if(submitted) {alert(\'Dziękuje za wybranie prezentu.\');}"></iframe>');
+                    onload="if(submitted) { alert(\'Dziękuje za wybranie prezentu.\');}"></iframe>');
         adaList.append($form);
     
         $('input[name="entry.986097915"]').val( $('input:checked')[0].value);
