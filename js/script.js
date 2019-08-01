@@ -106,10 +106,10 @@ if (audio.duration > 0 && !audio.paused)
 }
       
   },100);
-
-   for (var i = 0; i < 250; i++) {
-  create(i);
-  }          
+//
+//   for (var i = 0; i < 250; i++) {
+//  create(i);
+//  }          
 }
 
 
