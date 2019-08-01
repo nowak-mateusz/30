@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-sm navbar-light bg-light">
             <div class="collapse navbar-collapse order-last order-sm-first" id="navbarSupportedContent">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="#"><img src="img/check.svg" width="20" height="20" class="d-inline-block align-center" alt=""> Potwierdzenie</a>
+                    <a class="nav-item nav-link" href="#check"><img src="img/check.svg" width="20" height="20" class="d-inline-block align-center" alt=""> Potwierdzenie</a>
                     <a class="nav-item nav-link" href="#place"><img src="img/placeholder.svg" width="20" height="20" class="d-inline-block align-center" alt="">Miejsce</a>
                     <a class="nav-item nav-link" href="#contact"><img src="img/call.svg" width="20" height="20" class="d-inline-block align-center" alt="">Kontakt</a>
                 </div>
@@ -45,14 +45,43 @@
             <div class="container">
                 <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
                     <h1 class="display-6">Plan 30-letni wykonany<br>Zapraszamy na zabawę!</h1>
+                    <h4> 14.09.2019 </h4>
                 </div>    
             </div>
         </div>
-            
+        
         <div class="container">
+                <div class="row">
+            <div class="col">
+                <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                    <h2 class="display-5" id="check"><img src="img/check.svg" width="30" height="30" class="d-inline-block align-center" alt=""> Potwierdzenie</h2> 
+                    <p>Świętuj wspólnie z nami.<br>
+                    Zarezerwuj sobie czas <b>14.09.2019</b> i potwierdź swoją obecność w niezapomnianym wydarzeniu.</p>     
+                    <div class="row justify-content-center">
+                    <script type="text/javascript">var checksubmitted=false;</script>
+<iframe name="hidden_iframe2" id="hidden_iframe2" style="display:none;" 
+onload="if(checksubmitted) {alert('Dziękuje za potwierdzenie swojej obecności.');}"></iframe>
+                        <form class="form-inline" action="https://docs.google.com/forms/d/e/1FAIpQLSd7RSahI-DNVpOVLOt4ibNtnxzb-w8sm8XaVfPClpkukVUusg/formResponse" method="post" target="hidden_iframe2" onsubmit="checksubmitted=true;">        
+                            <div class="form-group">
+                                <label class="sr-only" for="inlineFormInputName2"></label>
+                                <input type="text" name="entry.849642794" class="form-control mb-2 mr-sm-2" id="name" placeholder="Jan Kowalski">
+                            </div>
+                            <button type="submit" class="btn btn-primary mb-2">Potwierdź</button>
+                        </form>
+                    </div>
+                </div>
+            </div>      
+        </div>  
             <div class="row">
                 <div class="col">
-                    <img class="rounded-circle mx-auto d-block" src="img/ada.jpg" alt="Generic placeholder image" width="140" height="140">
+                    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                        <h2 class="display-5">Gwiazdy wieczoru</h2> 
+                    </div>
+                </div>
+            </div>    
+            <div class="row">
+                <div class="col">
+                    <img class="rounded-circle mx-auto d-block" src="img/ada.jpg" alt="Ada" width="140" height="140">
                     <h2 class="text-center">Ada</h2>
                     <p style="font-size:12px;" class="text-center">Zakręcona z niej kobieta, Na parkiecie jak rakieta,<br>
                        Tańczy do białego rana, Po tym będzie rozpoznana. <br>
@@ -67,7 +96,7 @@
                        Bo taka dobra z niej dziewczyna, I z nią nie grozi Ci rutyna</p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col">
-                    <img class="rounded-circle mx-auto d-block"  src="img/filip.jpg" alt="Generic placeholder image" width="140" height="140">
+                    <img class="rounded-circle mx-auto d-block"  src="img/filip.jpg" alt="Filip" width="140" height="140">
                     <h2 class="text-center">Filip</h2>
                     <p style="font-size:12px;" class="text-center"> Zawsze wymyśli coś smacznego od nowa, Tym nie pogardzi nawet Gesslerowa,<br>
                     Warzywa chrupiące, Wołowina krucha On nie usłyszałby „oddaj fartucha!”<br>
@@ -86,8 +115,10 @@
                             Pomysł na prezent
                         </a>
                     </p>
-                
-                    <div class="collapse adaList" id="adaArea"></div>
+                <div class="collapse" id="adaArea">
+                    <p class="text-center"> Zarezerwuj prezent</p>
+                    <div class="adaList"></div>
+                </div>
                 </div><!-- /.col -->
                 <div class="col">
                     <p class="text-center">
@@ -95,16 +126,20 @@
                             Pomysł na prezent
                         </a>
                     </p>
-                    <div class="collapse adaList" id="filipArea"></div>
+                    <div class="collapse" id="filipArea">
+                        <p class="text-center">Vouchery i wszelkiego typu bony</p>
+                    </div>
                 </div><!-- /.col -->
             </div><!-- /.row -->
             <div class="row">
                 <div class="col">
                     <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
                         <h2 class="display-5" id="place"><img src="img/placeholder.svg" width="30" height="30" class="d-inline-block align-center" alt=""> Miejsce</h2>
-                        <p>ROD im. A. Paszkowiak<br>
-                        Tylne wejscie od strony Biedronki przy ul. Dolna Wilda 104<br>
-                        Nalezy przej pod rurami ;) </p>
+                        <p>Dom Działkowca<br>
+ROD im. A. Paszkowiak<br>
+wejście od strony Biedronki przy ul. Dolna Wilda 104<br>
+<a href="http://rodpaszkowiaka.pl/" class="btn btn-default" target="_blank">http://rodpaszkowiaka.pl/</a>
+ </p>
                     </div>
                     <div id="map"></div>
                     <script>
@@ -158,6 +193,20 @@
                 <div class="col">
                     <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
                         <h2 class="display-5" id="contact"><img src="img/call.svg" width="30" height="30" class="d-inline-block align-center" alt=""> Kontakt</h2>
+                        <div class="row">
+                            <div class="col">
+                                <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                                    <h4>Ada</h4>
+                                    &#54;&#57;&#55; &#56;&#49;&#50; &#49;&#50;&#51;
+                                </div>
+                            </div>    
+                            <div class="col">
+                                <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                                    <h4>Filip</h4>
+                                    &#53;&#48;&#50; &#55;&#48;&#48; &#54;&#55;&#52;
+                                </div>
+                            </div> 
+                        </div>
                     </div>
                 </div><!-- /.col -->
             </div><!-- /.row -->

@@ -107,12 +107,9 @@ if (audio.duration > 0 && !audio.paused)
       
   },100);
 
-  // for (var i = 0; i < 250; i++) {
-  //create(i);
-  //}          
-
-
-  
+   for (var i = 0; i < 250; i++) {
+  create(i);
+  }          
 }
 
 
@@ -148,7 +145,7 @@ function create(i) {
 
 function drop(x) {
   $('.confetti-'+x).animate({
-    top: "100%",
+    top: "60%",
     left: "+="+Math.random()*15+"%"
   }, Math.random()*3000 + 3000, function() {
     reset(x);
