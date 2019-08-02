@@ -113,6 +113,53 @@ if (audio.duration > 0 && !audio.paused)
 }
       
   },100);
+  
+ var canvas = document.getElementById('custom-canvas');
+ var title = document.getElementById('title');
+
+canvas.width  = title.offsetWidth;
+canvas.height = title.offsetHeight;
+//title.style.width  = canvas.offsetWidth;
+//title.style.height = canvas.offsetHeight;
+
+// save this function... we'll save it to the canvas itself for
+// the purpose of this demo
+canvas.confetti = canvas.confetti || confetti.create(canvas, {
+    resize: true
+});
+
+canvas.confetti({
+    spread: 70,
+    origin: {
+        y: 1.2
+    }
+});
+
+var duration = 30 * 1000;
+var end = Date.now() + duration;
+ 
+(function frame() {
+  // launch a few confetti from the left edge
+  canvas.confetti({
+    particleCount: 7,
+    angle: 60,
+    spread: 55,
+    origin: { x: 0 }
+  });
+  // and launch a few from the right edge
+  canvas.confetti({
+    particleCount: 7,
+    angle: 120,
+    spread: 55,
+    origin: { x: 1 }
+  });
+ 
+  // keep going until we are out of time
+  if (Date.now() < end) {
+    requestAnimationFrame(frame);
+  }
+}());
+
 //
 //   for (var i = 0; i < 250; i++) {
 //  create(i);
